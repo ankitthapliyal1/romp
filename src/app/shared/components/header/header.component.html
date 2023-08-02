@@ -1,0 +1,49 @@
+<header>
+  <div class="container1">
+    <div class="row">
+      <div class="col-md-3 col-sm-3 col-3">
+        <div class="logo">
+          <img routerLink="" src="assets/img/logo.png" alt="Logo">
+        </div>
+      </div>
+      <div class="col-md-9 col-sm-9 col-9 text-end">
+
+        <div class="menu_icon" [class.menu_icon_Class]="menu_icon_variable" (click)="openMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="menu" [class.menuClass]="menuVariable">
+          <ul>
+            <li routerLinkActive="active" routerLink="about" (click)="closeMenu()">About Romp</li>
+            <li routerLinkActive="active" >Policies <img src="assets/img/dropdown.png" alt="">
+              <div class="sub-menu">
+                  <ul>
+                    <li routerLink="privacy" (click)="closeMenu()">Privacy Policy</li>
+                  <li routerLink="terms" (click)="closeMenu()">Terms of use</li>
+                  <li routerLink="dispute" (click)="closeMenu()">Dispute Policy</li>
+                  </ul>
+             </div>
+        </li>
+        <li> <a >Games <img src="assets/img/dropdown.png" alt=""></a>
+            <div class="sub-menu">
+                <ul>
+                  <li routerLink="privacy" (click)="closeMenu()">Games</li>
+              
+                </ul>
+           </div>
+        </li>
+        <li> <a href="https://medium.com/@romp">Blog</a></li>
+        <li> <a href="mailto:support@romp.com">Contact </a></li>
+        <li>
+          <div class="btnn" onclick="window.location.href='https://drive.google.com/file/d/157TT3jMyy8OtSMd9zvOkIz986rebN3Te/view?usp=sharing';" >
+            Install Romp
+          </div>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+</header>

@@ -1,0 +1,197 @@
+
+
+
+.flex {
+    display: flex;
+ flex-wrap: wrap;
+}
+
+p {
+    text-align: center;
+}
+
+.imgg {
+    width: 100%;
+    height: auto;
+}
+
+.head-l {
+    width: 50%;
+    padding-top: 30px;
+
+    h1 {
+        color: #00B86C;
+        font-size: 48px;
+        font-weight: 800;
+    }
+
+    h3 {
+        color: #fff;
+        font-weight: 500;
+    }
+
+}
+
+.head-r {
+    width: 50%;
+}
+
+.cc {
+    background: #17102250;
+    padding: 20px 50px;
+    
+}
+
+.cirtification {
+    width: 40%;
+}
+
+
+///*******
+
+.contain {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.item {
+    flex-basis: 20%;
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+.rating-box{
+    padding: 20px;
+    border-radius: 15px;
+    background: #fff;
+    flex-basis: 30%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    margin-right: 10px;
+}
+
+
+.partner{
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+
+// accordion
+.accordionn {
+    width: 90%;
+    margin: auto;
+}
+
+.accordionn-item {
+    margin-bottom: 10px;
+    background: #E1E1E1;
+    border: none;
+    border-radius: 10px;
+}
+
+.accordionn-item-checkbox {
+    display: none;
+}
+
+.accordionn-item-label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 15px 35px;
+    background: #FFF;
+}
+
+
+
+.accordionn-item-label::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    border: solid #000;
+    border-width: 0 2px 2px 0;
+    width: 8px;
+    height: 8px;
+    transition: transform 0.3s ease ;
+    transform: rotate(317deg);
+}
+
+.accordionn-item-position {
+    color: #171022;
+    font-size: 18px;
+    font-weight: 500;
+    width: 95%;
+}
+
+
+
+.accordionn-item-content {
+    // max-height: 0;
+    display: none;
+    overflow: hidden;
+    background: #FFF;
+    transition: max-height 0.3s ease;
+    // border-top: 5px solid #E8E9EE;
+    color: #171022;
+    padding: 0px 32px 22px 32px;
+}
+
+
+.accordionn-item-checkbox:checked+.accordionn-item-label::after {
+    transform: rotate(45deg)
+        /* Update transform */
+}
+
+.accordionn-item-checkbox:checked+.accordionn-item-label+.accordionn-item-content {
+    max-height: 1000px;
+    display: block;
+    /* Adjust to a value larger than the content's height */
+}
+
+@media (max-width: 600px) {
+    .rating-box{
+        margin-right: 0;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .rating-box{
+        flex-basis: 100%;
+        
+    }
+    .item {
+        flex-basis: 40%;
+    }
+
+    .head-l {
+        width: 90%;
+
+       
+    }
+
+    .head-r{
+        width: 90%;
+    }
+
+    .cirtification{
+        width: 80%;
+    }
+}
